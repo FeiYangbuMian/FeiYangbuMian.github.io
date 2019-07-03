@@ -7,6 +7,25 @@ categories:
 	- Git
 ---
 
+## 目前我使用的命令步骤
+1. git add .
+2. git commit -m "some descrption"
+3. git push origin hexo
+4. hexo g -d
+
+来源于最底下链接内容：
+```
+迁移工作已完成，在两台电脑之间的同步操作如下：
+
+git pull从远程hexo分支拉取最新的环境文件到本地，可以理解为svn的更新操作。比如在公司写了博客，回家在电脑上也要写需要先执行这一步操作。
+文章写完，要发布时，需要先提交环境文件，再发布文章。按以下顺序执行命令：git add .、git commit -m "some descrption"、git push origin hexo、hexo g -d。
+
+作者：nikolausliu
+链接：https://www.jianshu.com/p/fceaf373d797/
+
+```
+
+<!-- 阅读更多 -->
 
 ## git使用
 
@@ -25,7 +44,7 @@ categories:
 5. 把本地仓库的项目推送到github上，git push -u origin master
     // 第一次上传成功后可以去掉-u
 ```
-<!-- 阅读更多 -->
+
 仓库里已有文件再提交：
 ```
 1. cd 仓库名文件夹

@@ -25,8 +25,8 @@ logo: /images/logo.png
 leancloud:
     appid: aD8jJBpu4oew3ovNY73z6Rdq-gzGzoHsz # 填写您的appid
     appkey: FdzS5SOPHdhYQoEUngQ8K2QW # 填写您的appkey
-    comment: true # 是否开启评论系统
-    timer: true # 是否开启文章统计
+    comment: false # 是否开启评论系统
+    timer: false # 是否开启文章统计
 
 
 # Analytics
@@ -34,7 +34,7 @@ leancloud:
 ga: UA-65933410-1
 
 # Copyright Infomation
-startyear: 2016
+startyear: 2019
 
 # search
 search:
