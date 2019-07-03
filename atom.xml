@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>FeiYangbuMian</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-07-03T09:15:03.905Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>FeiYangbuMian</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git笔记和hexo笔记</title>
+    <link href="http://yoursite.com/2019/07/03/live/study-git/"/>
+    <id>http://yoursite.com/2019/07/03/live/study-git/</id>
+    <published>2019-07-03T09:01:25.000Z</published>
+    <updated>2019-07-03T09:15:03.905Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="git使用"><a href="#git使用" class="headerlink" title="git使用"></a>git使用</h2><p>拉项目到本地</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. 新建文件夹</span><br><span class="line">2. git clone 项目复制的地址</span><br></pre></td></tr></table></figure><p>初次创建仓库： </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. 在网上创建一个仓库，git clone 仓库地址</span><br><span class="line">2. 把项目复制进仓库名一样的文件夹内，cd 仓库名文件夹</span><br><span class="line">3. 将文件加入暂存区，git add . </span><br><span class="line">4. 暂存区内容提交到仓库，git commit -m &quot;注释内容&quot;</span><br><span class="line">5. 把本地仓库的项目推送到github上，git push -u origin master</span><br><span class="line">    // 第一次上传成功后可以去掉-u</span><br></pre></td></tr></table></figure><!-- 阅读更多 --><p>仓库里已有文件再提交：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. cd 仓库名文件夹</span><br><span class="line">2. 将文件加入暂存区，git add .     </span><br><span class="line">3. 暂存区内容提交到仓库，git commit -m &quot;注释内容&quot;</span><br><span class="line">4. 获取远程库与本地同步合并，git pull --rebase origin master</span><br><span class="line">6. 把本地库内容推送到远程库上，git push -u origin master</span><br><span class="line"> //第一次上传成功后可以去掉-u</span><br></pre></td></tr></table></figure><h2 id="hexo使用"><a href="#hexo使用" class="headerlink" title="hexo使用"></a>hexo使用</h2><h3 id="新建文件"><a href="#新建文件" class="headerlink" title="新建文件"></a>新建文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 文件名</span><br></pre></td></tr></table></figure><h3 id="编写完后"><a href="#编写完后" class="headerlink" title="编写完后"></a>编写完后</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. hexo clean 清除缓存文件</span><br><span class="line">2. hexo g  生成文件</span><br><span class="line">3. hexo d 推送到远端github仓库</span><br></pre></td></tr></table></figure><p>由于换成台式电脑，hexo迁移遇到一些问题，根据此链接慢慢解决了：<a href="https://www.jianshu.com/p/fceaf373d797/" target="_blank" rel="noopener">hexo博客同步管理及迁移</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;git使用&quot;&gt;&lt;a href=&quot;#git使用&quot; class=&quot;headerlink&quot; title=&quot;git使用&quot;&gt;&lt;/a&gt;git使用&lt;/h2&gt;&lt;p&gt;拉项目到本地&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td 
+      
+    
+    </summary>
+    
+      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue学习笔记 一</title>
+    <link href="http://yoursite.com/2019/07/02/live/study-vue/"/>
+    <id>http://yoursite.com/2019/07/02/live/study-vue/</id>
+    <published>2019-07-02T07:16:29.000Z</published>
+    <updated>2019-07-03T03:33:00.936Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-初识Vue-js"><a href="#1-初识Vue-js" class="headerlink" title="1. 初识Vue.js"></a>1. 初识Vue.js</h2><h3 id="高级功能"><a href="#高级功能" class="headerlink" title="高级功能"></a>高级功能</h3><ul><li>解耦视图与数据</li><li>可复用的组件</li><li>前端路由</li><li>状态管理</li><li>虚拟DOM<a id="more"></a><h3 id="MVVM模式"><a href="#MVVM模式" class="headerlink" title="MVVM模式"></a>MVVM模式</h3></li><li>Model-View-ViewModel</li><li>视图-模型-视图模型</li></ul><h2 id="2-数据绑定"><a href="#2-数据绑定" class="headerlink" title="2. 数据绑定"></a>2. 数据绑定</h2><ul><li>v-model</li><li>el</li><li>data</li><li>filters 过滤器</li><li>v-pre 跳过编译<h3 id="生命周期钩子"><a href="#生命周期钩子" class="headerlink" title="生命周期钩子"></a>生命周期钩子</h3></li><li>created 实例创建完成后调用</li><li>mounted el挂到实例上后调用</li><li>beforeDestroy 实例销毁之前调用。主要用于解绑监听事件<br><img src="https://cn.vuejs.org/images/lifecycle.png" alt="生命周期钩子图"><h3 id="插值与表达式"><a href="#插值与表达式" class="headerlink" title="插值与表达式"></a>插值与表达式</h3></li><li>Mustache语法<ul><li>也可使用简单的JavaScript表达式<h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h3></li></ul></li><li>指令Directives，前缀v，当表达式的值<blockquote><p>当其表达式的值改变时，相应地将某些行为应用到DOM上</p></blockquote></li><li>v-bind 动态更新HTML元素上的属性</li><li>v-on 绑定事件监听器</li><li>methods<h3 id="语法糖"><a href="#语法糖" class="headerlink" title="语法糖"></a>语法糖</h3></li><li>v-bind简写为 :</li><li>v-on简写 为@</li></ul><h2 id="3-计算属性"><a href="#3-计算属性" class="headerlink" title="3. 计算属性"></a>3. 计算属性</h2><blockquote><p>以函数形式写在Vue实例内的computed选项内，最终返回计算后的结果</p><ul><li>每一个计算属性都包含一个getter和一个setter<ul><li>getter 默认，用于读取</li><li>setter 写入时触发</li></ul></li><li>computed依赖缓存，数据变化时才会重新取值</li><li>methods重新渲染时就会被调用</li></ul></blockquote><h2 id="4-指令"><a href="#4-指令" class="headerlink" title="4. 指令"></a>4. 指令</h2><ul><li>:class设置一个对象，动态切换class<ul><li>表达式每项为真时，对应类名就会加载</li><li>表达式过长或逻辑复杂时可绑定计算属性</li></ul></li><li>:class绑定一个数组，应用一个class列表<ul><li>可以在数组语法中使用对象语法</li></ul></li><li>v-cloak<ul><li>在Vue实例结束编译时从绑定的HTML上移除</li></ul></li><li>v-once<ul><li>只渲染一次，之后不再随数据的变化重新渲染</li></ul></li><li>v-if v-else-if v-else<ul><li>v-else-if要紧跟着v-if</li><li>v-else要紧跟着v-else-if或v-if</li></ul></li><li>v-show<ul><li>简单的CSS属性切换</li><li>表达式值为false时，元素会隐藏</li><li>v-show不能在<template>上使用</template></li></ul></li><li>v-for<ul><li>表达式结合in使用</li><li>遍历数组时，支持一个可选参数作为索引</li><li>遍历对象时，支持两个可选参数 键名 索引</li><li>push,pop,shift,unshift,splice,sort,reverse</li><li>filter,concat,slice</li></ul></li></ul><blockquote><p>修饰符：<br>stop 阻止事件冒泡 prevent capture self once</p></blockquote><blockquote><p>按键修饰符：<br>enter tab delete esc</p></blockquote><h2 id="5-表单与v-model"><a href="#5-表单与v-model" class="headerlink" title="5. 表单与v-model"></a>5. 表单与v-model</h2><blockquote><p>v-model 表单类元素的双向绑定数据<br>v-model 会忽略所有表单元素的 value、checked、selected 特性的初始值而总是将 Vue 实例的数据作为数据来源。</p></blockquote><p>v-model 在内部为不同的输入元素使用不同的属性并抛出不同的事件：</p><ul><li>text 和 textarea 元素使用 value 属性和 input 事件；</li><li>checkbox 和 radio 使用 checked 属性和 change 事件；</li><li>select 字段将 value 作为 prop 并将 change 作为事件</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-初识Vue-js&quot;&gt;&lt;a href=&quot;#1-初识Vue-js&quot; class=&quot;headerlink&quot; title=&quot;1. 初识Vue.js&quot;&gt;&lt;/a&gt;1. 初识Vue.js&lt;/h2&gt;&lt;h3 id=&quot;高级功能&quot;&gt;&lt;a href=&quot;#高级功能&quot; class=&quot;headerlink&quot; title=&quot;高级功能&quot;&gt;&lt;/a&gt;高级功能&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;解耦视图与数据&lt;/li&gt;
+&lt;li&gt;可复用的组件&lt;/li&gt;
+&lt;li&gt;前端路由&lt;/li&gt;
+&lt;li&gt;状态管理&lt;/li&gt;
+&lt;li&gt;虚拟DOM
+    
+    </summary>
+    
+      <category term="Vue" scheme="http://yoursite.com/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="http://yoursite.com/tags/Vue/"/>
+    
+  </entry>
+  
+</feed>
