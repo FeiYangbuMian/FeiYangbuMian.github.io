@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/07/06/live/study_vue1/</loc>
+    
+    <lastmod>2019-07-09T03:12:11.545Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/07/03/live/study-git/</loc>
     
-    <lastmod>2019-07-03T09:54:55.895Z</lastmod>
+    <lastmod>2019-07-06T09:56:17.735Z</lastmod>
     
   </url>
   
