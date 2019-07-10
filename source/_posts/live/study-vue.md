@@ -1,5 +1,5 @@
 ---
-title: Vue学习笔记 一
+title: Vue学习笔记一：内置指令、选项等
 date: 2019-07-02 15:16:29
 tags: Vue
 desc: 结合vue官网内容与梁灏编著的vue.js实战

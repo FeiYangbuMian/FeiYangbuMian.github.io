@@ -58,6 +58,13 @@ git clone 远程仓库地址
 5. 把本地库内容推送到远程库上，git push -u origin master
 	 //第一次上传成功后可以去掉-u
 ```
+
+其他常用命令（git bash用的是linux的命令）
+```
+初始化仓库：git init
+新建文件夹：mkdir 文件夹名
+新建文件：touch 文件名
+```
 ## hexo使用
 
 ### 新建文件

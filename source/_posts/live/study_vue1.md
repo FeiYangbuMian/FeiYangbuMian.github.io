@@ -1,5 +1,5 @@
 ---
-title: Vue学习笔记 二
+title: Vue学习笔记二：组件、自定义指令
 date: 2019-07-06 17:58:01
 tags: Vue
 desc: 结合vue官网内容与梁灏编著的vue.js实战
@@ -13,6 +13,7 @@ categories:
 - 组件注册必须在Vue实例申明之前
 - 每个组件必须只有一个根元素
  <!-- 阅读更多 -->
+
 ```
 Vue.component('my-component',{
     // 选项
@@ -200,7 +201,7 @@ let vm = new Vue({
 
 在向具名插槽提供内容的时候，可以在一个 <template> 元素上使用 v-slot 指令，并以 v-slot 的参数的形式提供其名称。
 
-```v-slot:``` 有参数时可缩写为 ```#```
+`v-slot:` 有参数时可缩写为 `#`
 ```
 <div id="vm">
 	<comp-child>
@@ -288,5 +289,88 @@ Vue.component('async-example', function (resolve, reject) {
       template: '<div>I am async!</div>'
     })
   }, 1000)
+})
+```
+## 自定义指令
+directive
+```
+// 注册一个全局自定义指令 `v-focus`
+Vue.directive('focus',{
+    // 当被绑定的元素插入到 DOM 中时……
+    inserted: function (el) {
+        // 聚焦元素
+        el.focus()
+    }
+});
+```
+局部指令 directives选项
+```
+directives: {
+    focus: {
+    // 指令的定义
+    inserted: function (el) {
+      el.focus()
+    }
+  }
+}
+```
+### 钩子函数
+- `bind`：只调用一次，指令第一次绑定到元素时调用。在这里可以进行一次性的初始化设置。
+- `inserted`：被绑定元素插入父节点时调用 (父节点存在即可调用，不必存在于document中)。
+- `update`：被绑定元素插入父节点时调用，而不论绑定值是否变化。通过比较更新前后的值来忽略不必要的模板更新。
+- `componentUpdated`：被绑定元素所在模板完成一次更新周期时调用。
+- `unbind`：只调用一次，指令与元素解绑时调用。
+### 钩子函数参数
+- `el`指令所绑定的元素，可以用来直接操作 DOM 。
+- `binding`
+    - name：指令名，不包括 v- 前缀。
+    - value：指令的绑定值，例如：v-my-directive="1 + 1" 中，绑定值为 2。
+    - oldValue：指令绑定的前一个值，仅在 update 和 componentUpdated 钩子中可用。无论值是否改变都可用。
+    - expression：绑定值的字符串形式。例如 v-my-directive="1 + 1" 中，表达式为 "1 + 1"。
+    - arg：传给指令的参数。例如 v-my-directive:foo 中，arg的值为 "foo"。
+    - modifiers：一个包含修饰符的对象。例如：v-my-directive.foo.bar 中，修饰符对象modifiers的值为 { foo: true, bar: true }。
+- `vnode`Vue 编译生成的虚拟节点。
+- `oldVnode`上一个虚拟节点，仅在 update 和 componentUpdated 钩子中可用。
+
+> 除了 el 之外，其它参数都应该是只读的，切勿进行修改。如果需要在钩子之间共享数据，建议通过元素的 dataset 来进行。
+
+```
+<div id="baseexample">
+  <p>Scroll down the page</p>
+  <p v-pin="200">Stick me 200px from the top of the page</p>
+</div>
+
+Vue.directive('pin', {
+  bind: function (el, binding, vnode) {
+    el.style.position = 'fixed'
+    el.style.top = binding.value + 'px'
+  }
+})
+new Vue({
+  el: '#baseexample'
+})
+```
+### 动态参数
+v-mydirective:[argument]="value"
+```
+<div id="dynamicexample">
+  <h3>Scroll down inside this section ↓</h3>
+  <p v-pin:[direction]="200">I am pinned onto the page at 200px to the left.</p>
+</div>
+
+Vue.directive('pin', {
+  bind: function (el, binding, vnode) {
+    el.style.position = 'fixed'
+    var s = (binding.arg == 'left' ? 'left' : 'top')
+    el.style[s] = binding.value + 'px'
+  }
+})
+new Vue({
+  el: '#dynamicexample',
+  data: function () {
+    return {
+      direction: 'left'
+    }
+  }
 })
 ```
