@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.9.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="1EB8XoOl0C"><meta name="google-site-verification" content="K7thEgdLm0UfRWJ5MGdF7sCcjClSzAlxFLPv2Oz5CGM"><title> Vue学习笔记三：Render函数 · FeiYangbuMian</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="结合vue官网内容与梁灏编著的vue.js实战"><meta name="keywords"><meta name="author" content="FeiYangbuMian"><link rel="short icon" href="/images/favicon.ico"><link rel="stylesheet" href="/css/bubuzou.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="FeiYangbuMian"><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script></head><body><header><div class="header row"> <a href="/" class="logo-link"><img src="/images/logo.png"></a><ul id="nav_list" class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" data-hover="博文" class="nav-list-link">博文</a></li><li class="nav-list-item"><a href="/archives/" target="_self" data-hover="归档" class="nav-list-link">归档</a></li></ul><div class="search"><a id="search_btn" href="#search"></a></div><div id="nav_btn" class="nav-btn"><span></span><span></span><span></span></div></div></header><div class="row scroll-con"><section class="container"><!-- for archive page--><div id="postAr" class="post"><article class="post-block"><h1 class="post-title">Vue学习笔记三：Render函数</h1><div class="post-info">2019-07-10</div><div class="post-content"><h2 id="Render函数"><a href="#Render函数" class="headerlink" title="Render函数"></a>Render函数</h2><p>渲染函数</p>
+<h3 id="虚拟DOM"><a href="#虚拟DOM" class="headerlink" title="虚拟DOM"></a>虚拟DOM</h3><ul>
+<li><p>Vue 通过建立一个虚拟 DOM 来追踪自己要如何改变真实 DOM，提升渲染性能。</p>
+</li>
+<li><p>Render函数用于实现虚拟DOM</p>
+</li>
+<li><p>Virtual Dom是一个轻量级的JavaScript对象，状态变化时进行Diff算法</p>
+</li>
+<li><p>Virtual Dom基于JavaScript计算</p>
+</li>
+<li><p>“虚拟节点 (virtual node)”，简写为“VNode”。“虚拟 DOM”是由 Vue 组件树建立起来的整个 VNode 树的称呼。</p>
+<!-- 阅读更多 -->
+
+
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">render: function (createElement) &#123;</span><br><span class="line">  return createElement(&apos;h1&apos;, this.blogTitle)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="createElement"><a href="#createElement" class="headerlink" title="createElement"></a>createElement</h3><p>Render函数通过createElement参数来创建Virtual Dom</p>
+<ul>
+<li>参数一必选，HTML标签、组件或函数<ul>
+<li>{String | Object | Function}</li>
+</ul>
+</li>
+<li>参数二可选，对应属性的数据对象<ul>
+<li>{Object}</li>
+</ul>
+</li>
+<li>参数三可选，子节点<ul>
+<li>{String | Array}</li>
+</ul>
+</li>
+</ul>
+</div></article></div><div class="right-container"><div class="widget"><div id="arAnchorBar"></div></div></div></section></div><div class="right-menu"></div><div class="modal search-modal"><div class="input-field"><input type="text" id="search_input"><label for="search-input">搜索</label></div><div id="search_result" class="search-result"></div></div><div class="blog-overlay"></div><footer class="row"><div class="footer-con"><div class="paginator"><a href="/2019/07/06/live/study_vue1/" title="Vue学习笔记二：组件、自定义指令" class="next">NEXT</a></div><div class="copyright"><p>© 2019 <a target="_blank">FeiYangbuMian</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> <br> and <a href="https://github.com/Bulandent/hexo-theme-bubuzou" target="_blank">hexo-theme-bubuzou</a></p><p> <span style="padding-right: 6px;">闽ICP备16007301号-2</span></p></div><div class="totop"><i></i></div></div></footer><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script src="/scripts/jquery-1.8.2.min.js"></script><script src="/scripts/ar-anchor.js"></script><script src="/scripts/main.js"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
