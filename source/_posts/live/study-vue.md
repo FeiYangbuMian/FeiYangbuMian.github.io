@@ -14,7 +14,9 @@ categories:
 - 前端路由
 - 状态管理
 - 虚拟DOM
+
 <!-- more -->
+
 ### MVVM模式
 - Model-View-ViewModel
 - 视图-模型-视图模型

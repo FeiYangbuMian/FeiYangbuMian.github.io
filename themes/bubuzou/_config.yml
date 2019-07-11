@@ -4,9 +4,9 @@ menu:
     # 生活: /categories/live/
     # 摄影: /categories/film/
     # 关于: /about/
-    前端: /live
+    # 前端: /live
     # 简历: /resume
-    关于: /about/
+    # 关于: /about/
 
 
 widgets:
