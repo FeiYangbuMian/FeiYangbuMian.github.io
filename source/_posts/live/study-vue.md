@@ -16,7 +16,6 @@ categories:
 - 虚拟DOM
 
 <!-- more -->
-
 ### MVVM模式
 - Model-View-ViewModel
 - 视图-模型-视图模型

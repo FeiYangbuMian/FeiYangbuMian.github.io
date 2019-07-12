@@ -16,7 +16,7 @@ categories:
 - Virtual Dom基于JavaScript计算
 - “虚拟节点 (virtual node)”，简写为“VNode”。“虚拟 DOM”是由 Vue 组件树建立起来的整个 VNode 树的称呼。
 
- <!-- 阅读更多 -->
+<!-- 阅读更多 -->
 
 
 ```
@@ -33,3 +33,25 @@ Render函数通过createElement参数来创建Virtual Dom
     - {Object}
 - 参数三可选，子节点
     - {String | Array}
+
+```
+gantt
+dateFormat YYYY-MM-DD
+section S1
+T1: 2014-01-01, 9d
+section S2
+T2: 2014-01-11, 9d
+section S3
+T3: 2014-01-02, 9d
+```
+
+```
+sequenceDiagram
+A->>B: How are you?
+B->>A: Great!
+```
+
+```
+graph LR
+A-->B
+```

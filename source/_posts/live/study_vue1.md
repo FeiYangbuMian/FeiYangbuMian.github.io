@@ -13,8 +13,7 @@ categories:
 - 组件注册必须在Vue实例申明之前
 - 每个组件必须只有一个根元素
 
- <!-- 阅读更多 -->
-
+<!-- 阅读更多 -->
 ```
 Vue.component('my-component',{
     // 选项
