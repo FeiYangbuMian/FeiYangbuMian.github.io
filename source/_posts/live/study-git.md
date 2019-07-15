@@ -12,6 +12,7 @@ git常用命令只有几个，但由于不常使用，基本记不住，于是�
 
 <!-- 阅读更多 -->
 ## 目前我使用的命令步骤
+0. hexo new 文件名   
 1. git add .
 2. git commit -m "some descrption"
 3. git push origin hexo
@@ -82,3 +83,12 @@ hexo new 文件名
 
 [hexo博客同步管理及迁移](https://www.jianshu.com/p/fceaf373d797/)。
 由于换成台式电脑，hexo迁移遇到一些问题，根据此链接慢慢解决了。
+
+## Git和Github
+- Git是版本控制系统
+- Github是在线的基于Git的代码托管服务。
+- NPM全称Node Package Manager，Node.js的包管理工具
+
+## 其他
+### github作为图床
+> 将网址中blob改为raw,就是图片外链地址
