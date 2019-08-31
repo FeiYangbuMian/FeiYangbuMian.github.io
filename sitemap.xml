@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/08/31/live/sum-marathon1/</loc>
+    
+    <lastmod>2019-08-31T06:51:49.700Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/07/03/live/study-git/</loc>
+    
+    <lastmod>2019-08-31T06:48:01.495Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/08/19/live/study-mui/</loc>
     
-    <lastmod>2019-08-19T09:05:55.090Z</lastmod>
+    <lastmod>2019-08-19T09:30:57.585Z</lastmod>
     
   </url>
   
@@ -19,13 +33,6 @@
     <loc>http://yoursite.com/2019/07/10/live/study-vue2/</loc>
     
     <lastmod>2019-07-24T02:22:44.057Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/07/03/live/study-git/</loc>
-    
-    <lastmod>2019-07-15T08:31:47.895Z</lastmod>
     
   </url>
   
