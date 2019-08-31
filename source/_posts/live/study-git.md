@@ -62,7 +62,7 @@ git clone 远程仓库地址
 
 其他常用命令（git bash用的是linux的命令）
 ```
-初始化仓库：git init
+初始化仓库：npm init
 新建文件夹：mkdir 文件夹名
 新建文件：touch 文件名
 ```

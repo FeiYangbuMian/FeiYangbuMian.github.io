@@ -12,6 +12,7 @@ categories:
 <!-- 阅读更多 -->
 
 ## 底部选项卡
+### util.js
 创建成功后js文件夹下有util.js文件
 ```
 //util.js
@@ -49,7 +50,7 @@ var util = {
 		}
 	},
 ```
-
+### manifest.json
 ```
 // manifest.json
 "plus": {
@@ -128,4 +129,11 @@ var util = {
 </div>
 ```
 ## 图片浏览
+需要mui.css, mui.js, mui.previewimage.css, mui.previewimage.js
+其中mui.previewimage.css是从mui样例imageviewer.html文件的style中复制成的单独css文件
+```
+<img src="login.jpg" id="head-img" data-preview-src="" data-preview-group="1" />
+
+mui.previewImage(); //图片预览
+```
 ## 图片裁剪
