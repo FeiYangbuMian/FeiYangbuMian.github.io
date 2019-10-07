@@ -12,7 +12,10 @@ categories:
 [vue2之axios](https://segmentfault.com/a/1190000013071458)
 > 因为本项目用的是json格式，所以未使用插件qs
 
-1. ```npm install axios```
+1. 
+```
+npm install axios
+```
 2. main.js中引入
 ```
 import Axios from 'axios'
@@ -72,7 +75,10 @@ this.$axios.get('/selectnews', {
 [wangEditor官方文档](https://www.kancloud.cn/wangfupeng/wangeditor3/332599)
 
 [vue2+wangeditor牛刀小试](https://segmentfault.com/a/1190000016010354)
-1. ```npm install wangeditor```
+1. 
+```
+npm install wangeditor
+```
 2. 新增富文本组件
 ```
 <template>
@@ -198,7 +204,6 @@ export default {
         }
       }
     }
-
     this.editor.create() // 创建富文本实例
   }
 }
