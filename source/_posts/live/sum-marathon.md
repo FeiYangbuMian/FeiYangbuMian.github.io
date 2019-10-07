@@ -12,7 +12,7 @@ categories:
 [vue2之axios](https://segmentfault.com/a/1190000013071458)
 > 因为本项目用的是json格式，所以未使用插件qs
 
-1. 
+1. 安装
 ```
 npm install axios
 ```
